@@ -21,6 +21,9 @@
 		D343B42C19CAC4BD00D8DA96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D343B40E19CAC4BD00D8DA96 /* UIKit.framework */; };
 		D343B43419CAC4BD00D8DA96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D343B43219CAC4BD00D8DA96 /* InfoPlist.strings */; };
 		D343B43619CAC4BD00D8DA96 /* MyRestorationLearningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D343B43519CAC4BD00D8DA96 /* MyRestorationLearningTests.m */; };
+		D343B44319CAC7A000D8DA96 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D343B44219CAC7A000D8DA96 /* RootViewController.m */; };
+		D343B44619CAC7BA00D8DA96 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D343B44519CAC7BA00D8DA96 /* SecondViewController.m */; };
+		D343B44919CAC7C700D8DA96 /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D343B44819CAC7C700D8DA96 /* PresentedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		D343B43119CAC4BD00D8DA96 /* MyRestorationLearningTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyRestorationLearningTests-Info.plist"; sourceTree = "<group>"; };
 		D343B43319CAC4BD00D8DA96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D343B43519CAC4BD00D8DA96 /* MyRestorationLearningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRestorationLearningTests.m; sourceTree = "<group>"; };
+		D343B44119CAC7A000D8DA96 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D343B44219CAC7A000D8DA96 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		D343B44419CAC7BA00D8DA96 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		D343B44519CAC7BA00D8DA96 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		D343B44719CAC7C700D8DA96 /* PresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
+		D343B44819CAC7C700D8DA96 /* PresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +165,12 @@
 			children = (
 				D343B41F19CAC4BD00D8DA96 /* ViewController.h */,
 				D343B42019CAC4BD00D8DA96 /* ViewController.m */,
+				D343B44119CAC7A000D8DA96 /* RootViewController.h */,
+				D343B44219CAC7A000D8DA96 /* RootViewController.m */,
+				D343B44419CAC7BA00D8DA96 /* SecondViewController.h */,
+				D343B44519CAC7BA00D8DA96 /* SecondViewController.m */,
+				D343B44719CAC7C700D8DA96 /* PresentedViewController.h */,
+				D343B44819CAC7C700D8DA96 /* PresentedViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -265,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D343B44619CAC7BA00D8DA96 /* SecondViewController.m in Sources */,
 				D343B42119CAC4BD00D8DA96 /* ViewController.m in Sources */,
 				D343B41B19CAC4BD00D8DA96 /* AppDelegate.m in Sources */,
+				D343B44919CAC7C700D8DA96 /* PresentedViewController.m in Sources */,
+				D343B44319CAC7A000D8DA96 /* RootViewController.m in Sources */,
 				D343B41719CAC4BD00D8DA96 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
