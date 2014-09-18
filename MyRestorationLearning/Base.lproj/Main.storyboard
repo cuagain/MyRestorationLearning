@@ -7,7 +7,7 @@
         <!--Root View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="RootViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="root" id="vXZ-lx-hvc" customClass="RootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -77,7 +77,7 @@
         <!--Second View Controller-->
         <scene sceneID="0gO-1r-8fq">
             <objects>
-                <viewController id="Nid-Yk-rqa" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="second" id="Nid-Yk-rqa" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Ex-ZK-V6T"/>
                         <viewControllerLayoutGuide type="bottom" id="GuM-y0-oWK"/>
@@ -107,7 +107,7 @@
         <!--Navigation Controller-->
         <scene sceneID="F3Y-qT-X8I">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fs1-zQ-stN" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="nav" automaticallyAdjustsScrollViewInsets="NO" id="fs1-zQ-stN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rM3-O1-S72">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

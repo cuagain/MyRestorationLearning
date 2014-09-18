@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "PresentedViewController.h"
 
 @interface RootViewController ()
 
@@ -37,6 +38,20 @@
 
 -(IBAction)unwindToRoot:(UIStoryboardSegue *)sender {
     
+}
+
++ (UIViewController*) viewControllerWithRestorationIdentifierPath:(NSArray*)ip coder: (NSCoder*)coder {
+    
+    NSLog(@"%@", ip);
+    
+    UIViewController* vc = nil;
+    if ([[ip lastObject] isEqualToString:@"presented"]) {
+        PresentedViewController* pvc = [PresentedViewController new];
+        pvc.restorationIdentifier = @"presented";
+        pvc.restorationClass = [self class];
+        vc = pvc;
+    }
+    return vc;
 }
 
 /*

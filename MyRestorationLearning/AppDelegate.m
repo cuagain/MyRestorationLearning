@@ -13,9 +13,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
-    
-    
+    return YES;
+}
+
+-(BOOL) application:(UIApplication *)application shouldRestoreApplicationState:(NSCoder *)coder {
+    NSLog(@"restore");
+    return YES;
+}
+
+-(BOOL) application:(UIApplication *)application shouldSaveApplicationState:(NSCoder *)coder {
+    NSLog(@"save");
     return YES;
 }
 							
