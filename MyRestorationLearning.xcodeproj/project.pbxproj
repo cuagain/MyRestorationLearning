@@ -114,9 +114,8 @@
 			children = (
 				D343B41919CAC4BD00D8DA96 /* AppDelegate.h */,
 				D343B41A19CAC4BD00D8DA96 /* AppDelegate.m */,
-				D343B41C19CAC4BD00D8DA96 /* Main.storyboard */,
-				D343B41F19CAC4BD00D8DA96 /* ViewController.h */,
-				D343B42019CAC4BD00D8DA96 /* ViewController.m */,
+				D343B44019CAC6B500D8DA96 /* Views */,
+				D343B43F19CAC6AD00D8DA96 /* Controllers */,
 				D343B42219CAC4BD00D8DA96 /* Images.xcassets */,
 				D343B41119CAC4BD00D8DA96 /* Supporting Files */,
 			);
@@ -150,6 +149,23 @@
 				D343B43219CAC4BD00D8DA96 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D343B43F19CAC6AD00D8DA96 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D343B41F19CAC4BD00D8DA96 /* ViewController.h */,
+				D343B42019CAC4BD00D8DA96 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D343B44019CAC6B500D8DA96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D343B41C19CAC4BD00D8DA96 /* Main.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
