@@ -27,6 +27,25 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSLog(@"second viewDidLoad");
+    
+    
+}
+
+- (void)encodeRestorableStateWithCoder:(NSCoder *)coder {
+    NSLog(@"second encodeRestorableStateWithCoder");
+    
+    [super encodeRestorableStateWithCoder:coder];
+}
+
+- (void)decodeRestorableStateWithCoder:(NSCoder *)coder {
+    NSLog(@"second decodeRestorableStateWithCoder");
+    [super decodeRestorableStateWithCoder:coder];
+}
+
+-(void) applicationFinishedRestoringState {
+    NSLog(@"second applicationFinishedRestoringState");
 }
 
 - (void)didReceiveMemoryWarning

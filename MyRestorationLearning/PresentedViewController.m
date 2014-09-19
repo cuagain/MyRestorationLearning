@@ -27,6 +27,40 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSLog(@"presented viewDidLoad");
+    
+}
+
+-(void) viewWillAppear:(BOOL)animated {
+    NSLog(@"presented viewWillAppear");
+}
+
+-(void) viewDidAppear:(BOOL)animated {
+    NSLog(@"presented viewDidAppear");
+}
+
+-(void) viewWillDisappear:(BOOL)animated {
+     NSLog(@"presented viewWillDisappear");
+}
+
+-(void) viewDidDisappear:(BOOL)animated {
+    NSLog(@"presented viewDidDisappear");
+}
+
+- (void)encodeRestorableStateWithCoder:(NSCoder *)coder {
+    NSLog(@"presented encodeRestorableStateWithCoder");
+    
+    [super encodeRestorableStateWithCoder:coder];
+}
+
+- (void)decodeRestorableStateWithCoder:(NSCoder *)coder {
+    NSLog(@"presented decodeRestorableStateWithCoder");
+    [super decodeRestorableStateWithCoder:coder];
+}
+
+-(void) applicationFinishedRestoringState {
+    NSLog(@"presented applicationFinishedRestoringState");
 }
 
 - (void)didReceiveMemoryWarning

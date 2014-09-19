@@ -28,6 +28,24 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSLog(@"root viewDidLoad");
+    
+}
+
+- (void)encodeRestorableStateWithCoder:(NSCoder *)coder {
+    NSLog(@"root encodeRestorableStateWithCoder");
+    
+    [super encodeRestorableStateWithCoder:coder];
+}
+
+- (void)decodeRestorableStateWithCoder:(NSCoder *)coder {
+    NSLog(@"root decodeRestorableStateWithCoder");
+    [super decodeRestorableStateWithCoder:coder];
+}
+
+-(void) applicationFinishedRestoringState {
+    NSLog(@"root applicationFinishedRestoringState");
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,6 +58,7 @@
     
 }
 
+/*
 + (UIViewController*) viewControllerWithRestorationIdentifierPath:(NSArray*)ip coder: (NSCoder*)coder {
     
     NSLog(@"%@", ip);
@@ -52,7 +71,7 @@
         vc = pvc;
     }
     return vc;
-}
+}*/
 
 /*
 #pragma mark - Navigation
